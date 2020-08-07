@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Alcohol calculator</title>
+</head>
+
+<body>
+  <header>
+    <h1>Alcohol calculator</h1>
+  </header>
+  <div id="drinks"></div>
+  <div id="modal">
+    <div id="modalElement">
+      <div class="inputDiv">
+        <div>
+          <span>ADV</span>
+        </div>
+        <div>
+          <label for="adv">
+            <input type="number" id="adv" min="0" placeholder="40%">
+          </label>
+        </div>
+      </div>
+      <div class="inputDiv">
+        <div>
+          <span>Size</span>
+        </div>
+        <div>
+          <label for="size">
+            <input type="number" id="size" min="0" placeholder="30ml">
+          </label>
+        </div>
+      </div>
+      <div id="addButtonDiv">
+        <button id="addButton">Add</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
