@@ -4,6 +4,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+body, #wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 header {
   height: fit-content;
 
@@ -22,6 +28,23 @@ header h1 {
   padding: 8px 0;
   font-weight: 700;
   color: white;
+}
+
+footer {
+  height: fit-content;
+
+  background: #202020;
+
+  box-shadow: 0 4px 8px #6e6e6e;
+
+  margin-top: auto;
+}
+
+footer h1 {
+  padding: 8px 0;
+  color: white;
+
+  margin-left: 16px;
 }
 
 #drinks {
@@ -46,6 +69,7 @@ header h1 {
 
   border: solid 2px black;
   box-shadow: 0 0 4px black;
+  cursor: pointer;
 }
 
 .addDrink > span {
@@ -62,11 +86,42 @@ header h1 {
 }
 
 .lv3 {
-  background: radial-gradient(#ff8953, #f1691a);
+  /* background: radial-gradient(#ff8953, #f1691a); */
+  border: solid 2px black;
+  box-shadow: 0 0 4px black;
 }
 
 .lv5 {
-  background: radial-gradient(#f15252, #e71b1b);
+  /* background: radial-gradient(#f15252, #e71b1b); */
+  border: solid 2px black;
+  box-shadow: 0 0 4px black;
+}
+
+.drinkPureAbvSpanDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 100%;
+}
+
+.drinkPureAbvSpan {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 16px;
+}
+
+.drinkAbvSizeDiv {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 2px #202020;
+  /* border-radius: 24px; */
+
+  font-size: 24px;
+}
+
+.drinkAbvSizeDiv > span {
+  margin-left: 16px;
 }
 
 #modal {
@@ -82,7 +137,7 @@ header h1 {
 
   padding-top: 16px;
   padding-bottom: 16px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #modalElement {

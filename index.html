@@ -11,36 +11,43 @@
 </head>
 
 <body>
-  <header>
-    <h1>Alcohol calculator</h1>
-  </header>
-  <div id="drinks"></div>
-  <div id="modal">
-    <div id="modalElement">
-      <div class="inputDiv">
-        <div>
-          <span>ADV</span>
+  <div id="wrapper">
+    <header>
+      <h1>Alcohol calculator</h1>
+    </header>
+    <div id="drinks"></div>
+
+    <div id="modal">
+      <div id="modalElement">
+        <div class="inputDiv">
+          <div>
+            <span>ADV</span>
+          </div>
+          <div>
+            <label for="abv">
+              <input type="number" id="abv" min="0" placeholder="40%">
+            </label>
+          </div>
         </div>
-        <div>
-          <label for="adv">
-            <input type="number" id="adv" min="0" placeholder="40%">
-          </label>
+        <div class="inputDiv">
+          <div>
+            <span>Size</span>
+          </div>
+          <div>
+            <label for="size">
+              <input type="number" id="size" min="0" placeholder="30ml">
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="inputDiv">
-        <div>
-          <span>Size</span>
+        <div id="addButtonDiv">
+          <button id="addButton">Add</button>
         </div>
-        <div>
-          <label for="size">
-            <input type="number" id="size" min="0" placeholder="30ml">
-          </label>
-        </div>
-      </div>
-      <div id="addButtonDiv">
-        <button id="addButton">Add</button>
       </div>
     </div>
+
+    <footer>
+      <h1>総アルコール量:</h1>
+    </footer>
   </div>
 </body>
 
